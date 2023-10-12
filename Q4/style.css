@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #f3f3f7;
+    
 }
 header{
     height: auto;
@@ -20,6 +21,10 @@ main{
     height: auto;
     padding-top: 10px;
     background-color: #f3f3f7;
+    /* auto scroll control  */
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .cardHead{
     /* height: 40px; */
