@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.left-section{
+    height: 100%;
+    min-height: 400px;
+    width: 25%;
+    color: #1d55ce;
+    /* background-color: #1d1ddf; */
+    background-image:url(https://img.freepik.com/premium-vector/paw-print-cat-dog-puppy-pet-trace_177006-39.jpg?w=1380);
+    /* transform: rotate(180deg); */
+    z-index: -1;
+}
+.left-quote{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    align-items: center;
+    font-family: cursive;
+    font-weight: bold;
+    color: #0081a7;
+    background-color: rgba(240, 248, 255, 0.493);
+    border-radius: 2rem;
+}
+.right-section{
+    height: 100%;
+    min-height: 400px;
+    width: 75%;
+    /* background-color: orange; */
+    background-image: url(https://img.freepik.com/free-photo/cute-animals-group-white-background_23-2150038562.jpg?w=900&t=st=1697560434~exp=1697561034~hmac=adeaff11be6d6d54667601ceff1f83286d4f2f124c5ddce35a582a593ba59d6e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pet-form{
+    padding-top: 30px;
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffffc0;
+    /* border: 1px solid black; */
+    box-shadow: 4px 4px 4px 4px #ececec;
+}
+.heading{
+    font:1.5em sans-serif;
+    font-weight: bold;
+    color: #626262;
+}
+.text1{
+    width: 90%;
+    /* margin: auto; */
+    font:1em sans-serif;
+    font-weight: bold;
+    color: #323232;
+    /* border: 1px solid black; */
+    
+}
+.input{
+    font:1em sans-serif;
+    font-weight: bold;
+    margin-bottom: 7px;
+    width: 90%;
+    height: 8%;
+    border-radius: 5px;
+    border: none;
+    background-color: #ececec;
+    padding-left: 10px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+input:focus{
+    box-shadow: 0px 0px 3px 3px #8cc0fa;
+    /* border-bottom: 2px solid blue; */
+    /* box-shadow: 0px 0px 3px 3px #ececec; */
+    background-color: #FFFF;
+    outline: none;
+}
+@media only screen and (max-width: 699px) {
+    .left-section{
+      display: none;
+    }
+    .right-section{
+        width: 100%;
+    }
+    .pet-form{
+        width: 60%;
+        height: 48%;
+        min-height: 500px;
+    }
+}
+button{
+    margin: auto;
+    width: 27%;
+    height: 7%;
+    border: none;
+    border-radius: 5px;
+    color:#ffff;
+    background:linear-gradient(45deg,#1f86fc , #1d55ce);
+}
+button:hover{
+    cursor: pointer;
+}
+.btn2{
+    color: black;
+    background:linear-gradient(45deg,#ebebeb , #ececec);
+}
