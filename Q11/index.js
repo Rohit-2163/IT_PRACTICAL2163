@@ -6,6 +6,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 
+//creating sql connection
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -13,26 +14,33 @@ const db = mysql.createConnection({
     database: '*******'
 });
 
-
+//checking connection if sucessful
 db.connect((err) => {
     if (err) throw err;
     console.log('Connected to database');
 });
+
+//defining port to listen the request
 app.listen(5000,()=>{
     console.log("listening on port 5000");
 });
 
+//root url
 app.get("/",(req,res)=>{
     res.sendFile(__dirname+"/home.html");
 });
 
+// login page redirection
 app.get("/login",(req,res)=>{
     res.sendFile(__dirname+"/login.html");
 });
+
+// signup page redirection
 app.get("/signup",(req,res)=>{
     res.sendFile(__dirname+"/signup.html");
 });
 
+// login request
 app.post('/login', [
     body('username').notEmpty().withMessage('Username is required'),
     body('password').notEmpty().withMessage('Password is required')
@@ -54,6 +62,7 @@ app.post('/login', [
     });
 });
 
+//sign up request
 app.post('/signup', [
     body('new_username').notEmpty().withMessage('Username is required'),
     body('new_password').notEmpty().withMessage('Password is required')
