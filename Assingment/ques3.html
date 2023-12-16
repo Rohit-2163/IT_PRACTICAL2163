@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>ques3 list manipulation</title>
+
+</head>
+<body>
+    <ul id="myList">
+        <li class="hot">Item 1</li>
+        <li>Item 2</li>
+        <li class="hot">Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</body>
+<script>
+    $(document).ready(function() {
+        // Select the first <li> element and change its text color to blue and background color to yellow
+        $("#myList li:first").css({"color": "blue", "background-color": "yellow"});
+      
+        // Select the last <li> element and change its background color to pink
+        $("#myList li:last").css("background-color", "pink");
+      
+        // Select all <li> elements whose class attribute has a value of hot to add a new class name called cool
+        $("#myList li.hot").addClass("cool");
+    });
+</script>
+</html>

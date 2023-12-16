@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.left-section{
+    height: 100%;
+    min-height: 400px;
+    width: 25%;
+    color: #1d55ce;
+    /* transform: rotate(20deg); */
+    background-image:url(https://img.freepik.com/free-vector/abstract-tire-track-splatter-background_1017-32249.jpg?w=996&t=st=1701793549~exp=1701794149~hmac=1e9215d1a87eae9672515ee25633844fbc0187a046b3d04890f412731d1ceefa);
+    z-index: 4;
+    /* justify-content:space-between; */
+    display: flex;
+}
+
+.right-section{
+    height: 100%;
+    min-height: 400px;
+    width: 75%;
+    background-image: url(https://img.freepik.com/free-photo/lines-traffic-paved-roads-background_1150-5987.jpg?w=1380&t=st=1701793710~exp=1701794310~hmac=1ce3710a82fc08b276f93cb2ee3b56b27448607ebb5e1618b0788792cdbe5384);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.car-form{
+    padding-top: 30px;
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffffc0;
+    box-shadow: 0px 6px 6px 0px #ffb703;
+    border-radius: 3rem;
+}
+.heading{
+    font:1.5em sans-serif;
+    font-weight: bold;
+    color: #626262;
+}
+.text1{
+    width: 90%;
+    font:1em sans-serif;
+    font-weight: bold;
+    color: #323232;
+    
+}
+.input{
+    font:1em sans-serif;
+    font-weight: bold;
+    margin-bottom: 7px;
+    width: 90%;
+    height: 8%;
+    border-radius: 5px;
+    border: none;
+    background-color: #ececec;
+    padding-left: 10px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+input:focus{
+    box-shadow: 0px 0px 3px 3px #8cc0fa;
+    background-color: #FFFF;
+    outline: none;
+}
+@media only screen and (max-width: 699px) {
+    .left-section{
+      display: none;
+    }
+    .right-section{
+        width: 100%;
+    }
+    .car-form{
+        width: 60%;
+        height: 48%;
+        min-height: 500px;
+    }
+}
+button{
+    margin: auto;
+    width: 27%;
+    height: 7%;
+    border: none;
+    border-radius: 5px;
+    color:#ffff;
+    background:linear-gradient(45deg,#1f86fc , #1d55ce);
+}
+button:hover{
+    cursor: pointer;
+}
+.btn2{
+    color: black;
+    background:linear-gradient(45deg,#ebebeb , #ececec);
+}
+.light{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    justify-content: space-between;
+    
+}
+#red{
+    background-color: #da2c38;
+    animation: circularMovement 2s infinite;
+    border: 25px solid black;
+    border-style: dashed;
+    /* animation:randomMovement 2s infinite ; */
+}
+#yellow{
+    background-color: #ffb703;
+    animation: circularMovement 2s infinite;
+    border: 25px solid black;
+    border-style: dashed;
+    /* animation:randomMovement 3s infinite ; */
+}
+#green{
+    background-color: #008000;
+    animation: circularMovement 2s infinite;
+    border: 25px solid black;
+    border-style: dashed;
+
+    /* animation:randomMovement 4s infinite ; */
+}
+.left-quote{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items:flex-start;
+    border-radius: 4rem;
+    /* justify-content: space-between; */
+    row-gap: 2rem;
+}
+
+@keyframes randomMovement {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(100px, 50px); }
+    50% { transform: translate(-60px, 30px); }
+    75% { transform: translate(80px, -40px); }
+    100% { transform: translate(0, 0); }
+}
+  
+@keyframes circularMovement {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.road{
+    width: 40px;
+    height: 600px;
+    /* border: #323232; */
+    background-color:#979dac;
+}
+
+.light:hover{
+    filter: brightness(200%);
+    cursor:grab;
+}

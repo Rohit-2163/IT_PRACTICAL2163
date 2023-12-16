@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Car Information</h2>
+    <button type="button" onclick="loadDoc()">Get Car Info</button>
+    <p id="demo">
+        <p>NAME: <span id="cname"></span></p>
+        <p>Model: <span id="cmodel"></span></p>
+    </p>
+  </body>
+  <script>
+    const name=document.getElementById("cname");
+    const model=document.getElementById("cmodel");
+    console.log(name.innerHTML);
+    console.log(model.innerHTML);
+
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          // Typical action to be performed when the document is ready:
+          let car=JSON.parse(xhttp.responseText);
+          //console.log(car);
+          //console.log(car.name)
+          name.innerHTML=car.name;
+          model.innerHTML=car.model;
+        
+          
+        }
+      };
+      xhttp.open("GET", "car.json", true);
+      xhttp.send();
+    }
+  </script>
+</html>

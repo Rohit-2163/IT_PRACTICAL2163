@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ques10</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div class="left-section">
+          <div class="road"></div>
+          <div class="left-quote">
+            <div class="light" id="red"></div>
+            <div class="light" id="yellow"></div>
+            <div class="light" id="green"></div>
+          </div>
+        </div>
+        <div class="right-section">
+          <form action="" class="car-form" id="carForm">
+            <div class="heading">CAR Details</div>
+            <div class="text1">Name of the manufacturer</div>
+            <input
+              class="input"
+              id="manufacturer"
+              type="text"
+              name="manufacturer"
+            />
+            <div class="text1">Name of the model</div>
+            <input class="input" id="model" type="text" name="model" />
+            <div class="text1">Manufacturing Year</div>
+            <input class="text1" id="year" type="month" name="year" />
+            <div class="text1">Fuel type</div>
+            <select class="input" id="fuel" name="fuel">
+              <option value="select">select</option>
+              <option value="Petrol">Petrol</option>
+              <option value="Diesel">Diesel</option>
+            </select>
+            <div class="text1">Color</div>
+            <input class="input" type="text" name="color" id="color" />
+            <div class="text1">Seating capacity</div>
+            <input
+              class="input"
+              type="number"
+              name="seating"
+              id="seating"
+              min="0"
+            />
+            <div class="text1">Cubic capacity</div>
+            <input
+              class="input"
+              type="number"
+              name="cubic"
+              id="cubic"
+              min="0"
+            />
+            <button class="btn1">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
