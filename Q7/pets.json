@@ -1,16 +1,29 @@
 [
-    {
-      "name": "Fluffy",
-      "age": 2,
-      "weight": 5,
-      "type": "Cat",
-      "likes": "Playing with yarn"
-    },
-    {
-      "name": "Rex",
-      "age": 3,
-      "weight": 20,
-      "type": "Dog",
-      "likes": "Fetching balls"
-    }
+  {
+    "name": "Fluffy",
+    "age": 2,
+    "weight": 5,
+    "type": "Cat",
+    "likes": "Playing with yarn"
+  },
+  {
+    "name": "Rex",
+    "age": 3,
+    "weight": 20,
+    "type": "Dog",
+    "likes": "Fetching balls"
+  },
+  { "name": "Bowlder",
+    "age": 6, 
+    "weight":10,
+    "type": "Dog", 
+    "likes": "Jumping and running" 
+  },
+  { "name": "Mittens", 
+    "age": 4, 
+    "weight":10,
+    "type": "Cat",        
+    "likes": "laying" 
+  }
+
 ]

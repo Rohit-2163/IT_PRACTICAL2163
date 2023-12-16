@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    background-image: url(https://img.freepik.com/free-photo/cute-animals-group-white-background_23-2150038562.jpg?w=900&t=st=1697560434~exp=1697561034~hmac=adeaff11be6d6d54667601ceff1f83286d4f2f124c5ddce35a582a593ba59d6e);
+}
+h2{
+    text-align: center;
+}
+span{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 40px;
+}
+table {
+    border-collapse: collapse;
+    padding: 2%;
+}
+#petsTable {
+  margin-top: 30px;
+  width: 100%;
+  border-collapse:separate;
+  border-spacing:0 15px;
+  background-image: url();
+  font:1em sans-serif;
+  box-shadow: 0px 2px 3px 0px #0081a7;
+  background-color: #ffffff5e;
+  border-radius: 20px;
+  font-weight: bold;  
+}
+
+th{
+    color: #1d55ce;
+    text-align: center;
+}
+tr{
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0px #0081a7;
+    font-size: 14px;
+    cursor: pointer;
+}
+th, td {
+    width:150px;
+    text-align:center;
+    padding: 5px;
+    background-color: #ffffff81;
+}
+tr:hover{
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px #0081a7; 
+}
+
+

@@ -6,7 +6,6 @@
 }
 header {
   height: auto;
-  /* z-index: 10; */
 }
 nav {
   height: 60px;
@@ -22,8 +21,7 @@ main {
   align-items: center;
   height: auto;
   width: 100%;
-  column-gap: 4em;
-  /* background-color: yellow; */
+  column-gap: 2em;
 }
 .card {
   height: 430px;
@@ -32,126 +30,144 @@ main {
   margin-bottom: 20px;
   padding-left: 15px;
   padding-top: 10px;
-  transition: box-shadow 0.3s ease-in;
+  transition: box-shadow 0.2s ease-in;
   border: 1px solid #d9d9d9;
-  /* border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
-  /* border-radius: 10px; */
-  /* box-shadow: 0px 0px 6px 6px #d4d4d4; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  
+}
+.card-2 {
+  height: 430px;
+  width: 350px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: box-shadow 0.2s ease-in;
+  border: 1px solid #d9d9d9;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.currentTimeline{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  color: orangered;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.card-2::-webkit-scrollbar {
+  display: none;
 }
 .card:hover {
   box-shadow: 0px 0px 20px 20px #ebebeb;
-  /* border: none */
 }
 .segment1 {
   height: 15%;
   width: 100%;
-  /* border: 1px solid green; */
 }
 .segment1-1 {
   height: 30%;
   width: 100%;
   color: orangered;
-  /* font-size: small; */
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  /* border: 1px solid #d8e2e5; */
 }
 .segment11 {
   height: 15%;
   width: 100%;
-  /* border: 1px solid green; */
 }
 .segment11-1 {
   height: 30%;
   width: 100%;
   color: orangered;
-  /* font-size: small; */
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  /* border: 1px solid #d8e2e5; */
 }
 .segment111 {
   height: 15%;
   width: 100%;
-  /* border: 1px solid green; */
 }
 .segment111-1 {
   height: 30%;
   width: 100%;
   color: orangered;
-  /* font-size: small; */
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  /* border: 1px solid #d8e2e5; */
 }
 .segment2 {
   height: 30%;
   width: 100%;
-  /* border: 1px solid #d8e2e5; */
-  /* background-color: green; */
 }
 .segement2-1 {
   height: 20%;
   width: 100%;
   color: orangered;
-
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  /* font-size: small; */
-  /* border: 1px solid #d8e2e5; */
 }
 ul {
   list-style: inside none;
-  /* color: orangered; */
-
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-family: cursive;
-  /* font-size: smaller; */
 }
 .segment3 {
   height: 20%;
   width: 100%;
-  /* border: 1px solid green; */
 }
 .segement3-1 {
   height: 30%;
   width: 100%;
   color: orangered;
-  /* font-size: small; */
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  /* border: 1px solid #d8e2e5; */
 }
 .segement3-2 {
   padding-left: 15px;
-  font-family: cursive;
   font-size: smaller;
 }
 
 .plans {
   text-align: center;
+  row-gap: 6em;
+}
+.plansbrief{
+  font-weight: bold;
+  margin-top:  25px;
+  list-style: inside;
+}
+.course{
+  /* font-family: cursive; */
+  border: none;
+  display: flex;
+  flex-direction: column;
+  color: #00296b;
+  background-color: #06d69e4b;
+  padding: 4%;
+  border-radius: 2%;
+}
+span{
+  color: black;
+  font-weight: bold;
+  border-radius: 3%;
+  padding: 2%;
 }
 
 /* footer time line */
 .timeline {
-    /* background-image: url(https://img.freepik.com/free-photo/view-white-crumpled-paper_1194-7544.jpg?w=1380&t=st=1698467193~exp=1698467793~hmac=ad41925f0560c991c7d0b9bf3704d077eda8ef3b9c936c83e902aa3902ea6912); */
   width: 100%;
-  height: 380px;
+  height: 340px;
   padding: 40px;
-  /* position: relative; */
   box-sizing: border-box;
-  /* background: #0099ff; */
-  background: #dee2e6;
-    /* overflow-y: hidden; */
   display: flex;
-  /* flex-direction: column; */
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* color: aqua; */
+  row-gap: 6em;
+  column-gap: 1em;
 }
 .timieline-title {
   font-size: 1.5em;
@@ -177,9 +193,7 @@ ul {
   width: calc(100% + 14px);
   height: 4px;
   top: calc(100% + 10px);
-  /* background: #fff; */
   background:#006b59c2;
-  /* background: #ff4907; */
   content: "";
   left: -7px;
   border-radius: 5px;
@@ -191,7 +205,7 @@ ul {
   height: 25px;
   top: 100%;
   left: calc(50% - 10px);
-  background: #fff;
+  background:#006b59c2;
   content: "";
 }
 .timeline-period {
@@ -210,9 +224,7 @@ ul {
 .timeline-period:before {
   width: 15px;
   height: 15px;
-  background: #fff;
-  /* background-color: #0099ff; */
-  /* background: #0099ff; */
+  background:#006b59;
   border-radius: 50%;
   content: "";
   position: absolute;
@@ -221,24 +233,6 @@ ul {
   z-index: 2;
 }
 
-.timeline-content:nth-child(even) {
-  align-self: flex-end;
-  /* color: #ff4907; */
-  /* background-color: #ff4907; */
-}
-.timeline-content:nth-child(even):before {
-  top: -15px;
-}
-.timeline-content:nth-child(even):after {
-  top: -25px;
-}
-.timeline-content:nth-child(even) .timeline-period {
-  top: -60px;
-}
-.timeline-content:nth-child(even) .timeline-period:before {
-  top: calc(100% + 2px);
-}
 .timeline-content:hover {
-    box-shadow: 0px 0px 3px 3px rgba(13, 212, 136, 0.6);
-    /* border: none */
+  box-shadow: 0px 0px 3px 3px rgba(13, 212, 136, 0.6);  
 }

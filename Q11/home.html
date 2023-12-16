@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question11</title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: #ffff;
+    }
+    header{
+        height: 70px;
+        width: 100vw;
+        display: flex;
+        background-color: #ececec;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: right;
+        margin-right: 10%;
+    }
+    button{
+        height: 50%;
+        width: 10%;
+        margin-right: 18px;
+        background-color: #ececec;
+        border: none;
+        font-size: medium;
+        color: #9e9e9e;
+        border: 1px solid #aeaeae;
+        transition-duration: 0.3s;
+        transition-property: border,color;
+    }
+    button:hover{
+        cursor: pointer;
+        border-color: #747373;
+        color: #747373;
+    }
+  </style>
+</head>
+<body>
+    <header>
+            <button id="login">
+                login
+            </button>
+            <button id="signup">
+                    signup
+      </button>
+    </header>
+    <main>
+    </main>
+</body>
+<script>
+    document.getElementById("login").addEventListener("click",(e)=>{
+        window.location.href = "/login";
+    })
+    document.getElementById("signup").addEventListener("click",(e)=>{
+        window.location.href = "/signup";
+    })
+</script>
+</html>

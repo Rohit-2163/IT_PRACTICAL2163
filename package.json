@@ -1,0 +1,11 @@
+{
+  "name": "it_practicals",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000I\u0000T\u0000_\u0000P\u0000R\u0000A\u0000C\u0000T\u0000I\u0000C\u0000A\u0000L\u00002\u00001\u00006\u00003\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -15,9 +15,7 @@
     min-height: 400px;
     width: 25%;
     color: #1d55ce;
-    /* background-color: #1d1ddf; */
     background-image:url(https://img.freepik.com/premium-vector/paw-print-cat-dog-puppy-pet-trace_177006-39.jpg?w=1380);
-    /* transform: rotate(180deg); */
     z-index: -1;
 }
 .left-quote{
@@ -36,7 +34,6 @@
     height: 100%;
     min-height: 400px;
     width: 75%;
-    /* background-color: orange; */
     background-image: url(https://img.freepik.com/free-photo/cute-animals-group-white-background_23-2150038562.jpg?w=900&t=st=1697560434~exp=1697561034~hmac=adeaff11be6d6d54667601ceff1f83286d4f2f124c5ddce35a582a593ba59d6e);
     display: flex;
     justify-content: center;
@@ -54,7 +51,6 @@
     justify-content: center;
     align-items: center;
     background-color: #ffffffc0;
-    /* border: 1px solid black; */
     box-shadow: 4px 4px 4px 4px #ececec;
 }
 .heading{
@@ -64,11 +60,9 @@
 }
 .text1{
     width: 90%;
-    /* margin: auto; */
     font:1em sans-serif;
     font-weight: bold;
     color: #323232;
-    /* border: 1px solid black; */
     
 }
 .input{
@@ -86,8 +80,6 @@
 }
 input:focus{
     box-shadow: 0px 0px 3px 3px #8cc0fa;
-    /* border-bottom: 2px solid blue; */
-    /* box-shadow: 0px 0px 3px 3px #ececec; */
     background-color: #FFFF;
     outline: none;
 }

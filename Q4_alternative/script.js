@@ -10,7 +10,7 @@ const getRandomColor = function () {
   };
 var tbl = document.getElementById("content");
 var number = 2;
-var abc = setInterval(printrow, 500);
+var abc = setInterval(printrow, 2000);
 function printrow() {
     let color=getRandomColor();
     // console.log(color);
@@ -29,7 +29,7 @@ function printrow() {
   number++;
   var row = document.createElement("tr");
   row.style.color = color;
-  row.style.fontSize = number + 22 + "px";
+  row.style.fontSize = number + 12 + "px";
   row.innerHTML = result;
   tbl.append(row);
 }

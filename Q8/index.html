@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 8</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="course">
+      <h1>Bsc. Honours Computer Science</h1>
+    </div>
+    <main>
+      <div class="card">
+        <div class="segment1 segment">
+          <div class="Shead">About course</div>
+          <div class="segment1-1">
+            <span>The BSc Computer Science Honours:</span> degree is a
+            comprehensive program that provides a deep understanding of both the
+            theoretical and practical aspects of computer science.
+            <br />
+            <br />
+            <span>Core Courses:</span>These are compulsory courses that provide
+            a solid foundation in computer science.
+            <br />
+            <br />
+            <span>Elective Courses:</span> These are optional courses that allow
+            students to specialize in specific areas of interest. They can be
+            discipline-specific or generic.
+            <br />
+            <br />
+            <span>Ability Enhancement Courses/Skill Enhancement Courses:</span>
+            These courses are designed to enhance knowledge and skills. They
+            include mandatory courses like Environmental Science and English
+            Communication.
+            <br />
+            <br />
+            <span>Practical Sessions:</span>Students undertake various practical
+            sessions to gain hands-on experience.
+            <br />
+            <br />
+            <span>Research Project:</span>The program often includes a
+            supervised research project, culminating in the presentation of an
+            honours dissertation.
+            <br />
+            <br />
+            <span>Industrial Visits and Internship Training:</span> These
+            provide students with real-world exposure to the computer science
+            and software industry.
+            <br />
+            <br />
+            <span>The course covers subjects</span> like Operating Systems,
+            Computer Networks, Data Structures,Numerical Analysis, System
+            Software, System Programming, Python Programming, Web Technology,
+            and Mobile Applications Development. The course duration is
+            typically 3 years.
+          </div>
+        </div>
+        <div class="segment2 segment">
+          <div class="Shead">Eligibility</div>
+          <div class="segment1-1">
+            <ul>
+                <li>Candidates must have completed their Class 12 higher secondary education from an accredited board.</li>
+                <li>They should have secured a minimum of 50% marks in the aggregate.</li>
+                <li>The student must have chosen physics, chemistry, and mathematics as their required higher secondary subjects.</li>
+                <li>Some colleges may grant admission to students who have science with physics, chemistry and biology (PCB).</li>
+                <li>Having a Computer Science degree is also advantageous in some universities.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="segment3 segment">
+          <div class="Shead">fees</div>
+          <div class="segment1-1">Fees Details</div>
+        </div>
+        <div class="segment4 segment">
+          <div class="Shead">Future scope</div>
+          <div class="segment1-1">Scope Details</div>
+        </div>
+      </div>
+    </main>
+    <button id="styleButton">Style Me Up!</button>
+
+    <!-- main scripting for styling -->
+    <script>
+      $("#styleButton").click(function () {
+        $("body").css({
+          "background-color": "#ffffff"
+
+        });
+        $("span").css({
+          "color":"#006d77",
+          "font-weight": "bold"
+        });
+        $(".course").css({
+          "text-align": "center",
+          "width": "100%",
+          "border": "2px solid black",
+          "transition-property": "width",
+          "transition-duration": "1s",
+          "transition-timing-function": "linear",
+          "transition-delay": "0s",
+          "color":"#03045e",
+          "background-color": "#ffffff"
+        });
+        $(".course").hover(function () {
+          $(this).css("width", "100%");
+        });
+
+        $(".Shead").css({
+          "font-weight": "bolder"
+        });
+
+        $(".card").css({
+          "display": "flex",
+          "flex-wrap": "wrap",
+          "justify-content": "center",
+          "align-items": "center",
+          "height": "auto",
+          "column-gap": "2rem",
+        });
+        $(".segment").css({
+          "height": "60px",
+          "width": "300px",
+          "margin-top": "50px",
+          "margin-bottom": "20px",
+          "padding-left": "15px",
+          "padding-top": "10px",
+          "transition": "box-shadow 0.2s ease-in",
+          "border": "1px solid #d9d9d9",
+          "font-family": "Georgia, 'Times New Roman', Times, serif",
+          "font-family": "Comic Sans MS, Comic Sans, cursive",
+          "box-shadow": "0px 0px 2px 2px #fca311",
+          "transition-property": "height",
+          "transition-duration": "1s",
+          "transition-timing-function": "linear",
+          "transition-delay": "0s",
+          "padding":"0.8rem",
+          "color": "#00296b",
+          "overflow-y": "scroll",
+          "scroll-behavior": "smooth",
+          "background-color": "#eaeaea",
+          "filter": "brightness(120%)"
+        });
+        $(".Shead").css({
+            "text-align": "center",
+            "margin-bottom": "1rem"
+        });
+
+        $(".segment").hover(function () {
+          $(this).css("height", "400px");
+        });
+
+        $("#styleButton").hide();
+      });
+    </script>
+  </body>
+</html>
